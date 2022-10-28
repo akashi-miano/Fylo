@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<!-- fontawesome -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<title></title>
+		<!-- external stylesheet -->
+		<link rel="stylesheet" href="css/style.css" media="all">
+		<!-- external js -->
+		<script defer src="js/script.js"></script>
+	</head>
+	<body>
+		<header class="hero">
+			<div class="hero__wrapper ">
+				<nav class="hero__nav flex flex-col md:flex-row items-center justify-between gap-4 md:gap-0 container">
+					<div class="nav__logo-wrapper">
+						<img class="nav__logo" src="images/logo-light-mode.svg" alt="">
+					</div>
+					<ul class="nav__list flex items-center gap-8">
+						<li class="nav__item"><a href="#features">Features</a></li>
+						<li class="nav__item"><a href="#testimonials">Testimonials</a></li>
+						<li class="nav__item">
+							<button class="nav__toggle">
+								<i class="moon text-xl fa-solid fa-moon text-gray-500"></i>
+								<i class="hidden sun text-xl fa-solid fa-sun text-gray-200"></i>
+							</button></li>
+					</ul>
+				</nav>
+				<div class="hero__content flex flex-col items-center justify-center gap-4 pt-14">
+					<div class="hero__img-wrapper">
+						<img class="hero__img" src="images/illustration-intro.png" alt="">
+					</div>
+					<header class="hero__header text-center flow-content--md">
+						<h1 class="hero__title font-bold text-4xl"> All your files in one secure location, <br>assessible anywhere. </h1>
+						<p class="hero__desc  text-xl p-center"> Fylo stores all your most important files in one secure location. Access them wherever you need, share and collaborate with friends family, and co-workers. </p>
+						<a class="btn btn-primary text-lg" href="">get started</a>
+					</header>
+				</div>
+			</div>
+		</header>
+
+		<!-- features section -->
+		<section id="features" class="features py-24 bg-[#f9f9f9]">
+			<div class="features__wrapper container">
+				<div class="features__content container grid grid-cols-1 md:grid-cols-2 gap-y-24">
+					<div class="feature flow-content--sm">
+						<div class="feature__img-wrapper mb-8">
+							<img class="feature__img block mx-auto " src="images/icon-access-anywhere.svg " alt="">
+						</div>
+						<h2 class="feature__title card-title">Access your file from anywhere</h2>
+						<p class="feature__desc p-center"> The ability to use a smartphone, tablet, or computer to access your account means your files follow you everywhere. </p>
+					</div>
+					<div class="feature flow-content--sm">
+						<div class="feature__img-wrapper mb-8">
+							<img class="feature__img block mx-auto " src="images/icon-security.svg" alt="">
+						</div>
+						<h2 class="feature__title card-title">Security you can trust</h2>
+						<p class="feature__desc p-center"> 2-factor authentication and user-controlled encryption are just a couple of the security features we allow to help secure your files. </p>
+					</div>
+					<div class="feature flow-content--sm">
+						<div class="feature__img-wrapper mb-8">
+							<img class="feature__img block mx-auto " src="images/icon-collaboration.svg" alt="">
+						</div>
+						<h2 class="feature__title card-title">Access your file from anywhere</h2>
+						<p class="feature__desc p-center"> The ability to use a smartphone, tablet, or computer to access your account means your files follow you everywhere. </p>
+					</div>
+					<div class="feature flow-content--sm">
+						<div class="feature__img-wrapper mb-8">
+							<img class="feature__img block mx-auto " src="images/icon-any-file.svg" alt="">
+						</div>
+						<h2 class="feature__title card-title">Security you can trust</h2>
+						<p class="feature__desc p-center"> 2-factor authentication and user-controlled encryption are just a couple of the security features we allow to help secure your files. </p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- productivity section -->
+		<section class="productive py-24">
+			<div class="productive__wrapper container">
+				<div class="productive__content grid grid-cols-1 md:grid-cols-2 items-center gap-8">
+					<div class="productive__img-wrapper">
+						<img class="productive__img" src="images/illustration-stay-productive.png" alt="">
+					</div>
+					<header class="productive__header text-center md:text-left flow-content--md">
+						<h2 class="productive__title section-title"> Stay productive, wherever you are </h2>
+						<p class="productive__desc section-desc max-w-[450px] md:max-w-none mx-auto md:mx-0 text-center md:text-left"> Never let location be an issue when accessing your files. Fylo has you covered for all of your file storage needs. </p>
+						<p class="productive__desc section-desc max-w-[450px] md:max-w-none mx-auto md:mx-0 text-center md:text-left"> Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required. </p>
+						<a class="productive__btn block flex items-center gap-2 justify-center md:justify-start" href="">
+							<p class="text-[#65e2d9] underline text-lg">See how Flyo works</p>
+							<img class="w-[16px] h-[24px]" src="images/icon-arrow.svg" alt="">
+						</a>
+					</header>
+				</div>
+			</div>
+		</section>
+
+		<!-- testimonials section -->
+		<section id="testimonials" class="testimonials bg-[#f8f8f8] p-8">
+			<div class="testimonials__wrapper container">
+				<div class="testimonials__content grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-4">
+					<div class="testimonial bg-gray-100 rounded-xl p-6 flow-content--md relative">
+						<img class="absolute  w-[40px] top-[-1.5rem]  md:top-[-4rem] left-0 md:w-[80px]" src="images/bg-quotes.png" alt="">
+						<p class="testimonial__desc text-xl"> Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine. </p>
+						<div class="testimonial__author flex items-center gap-4">
+							<img class="testimonial__author-img w-[40px] h-[40px] rounded-full" src="images/profile-1.jpg" alt="">
+							<div class="testimonial__author-desc">
+								<p class="testimonial__author-name font-bold"> Satish Patel</p>
+								<p class="testimonial__author-profision">Founder & CEO. Huddle</p>
+							</div>
+						</div>
+					</div>
+					<div class="testimonial bg-gray-100 rounded-xl p-6 flow-content--md">
+						<p class="testimonial__desc text-xl"> Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine. </p>
+						<div class="testimonial__author flex items-center gap-4">
+							<img class="testimonial__author-img w-[40px] h-[40px] rounded-full" src="images/profile-2.jpg" alt="">
+							<div class="testimonial__author-desc">
+								<p class="testimonial__author-name font-bold">Bruce McKenzie</p>
+								<p class="testimonial__author-profision">Founder & CEO. Huddle2</p>
+							</div>
+						</div>
+					</div>
+					<div class="testimonial bg-gray-100 rounded-xl p-6 flow-content--md">
+						<p class="testimonial__desc text-xl"> Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine. </p>
+						<div class="testimonial__author flex items-center gap-4">
+							<img class="testimonial__author-img w-[40px] h-[40px] rounded-full" src="images/profile-3.jpg" alt="">
+							<div class="testimonial__author-desc">
+								<p class="testimonial__author-name font-bold">Eva Boyd</p>
+								<p class="testimonial__author-profision">Founder & CEO. Huddle3</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- early access section -->
+		<section class="early">
+			<div class="early__wrapper container max-w-[900px]">
+				<div class="early__content flow-content--md bg-gray-200 p-8 rounded-lg text-center translate-y-[5rem]">
+					<header class="early__header flow-content--md">
+						<h2 class="early__title section-title">Get early access today</h2>
+						<p class="early__desc mx-auto md:mx-0 max-w-[450px] md:max-w-none"> It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our support team would be happy to help you. </p>
+					</header>
+					<div class="early__form flex flex-col md:flex-row items-center gap-4">
+						<input id="" class="w-full md:w-auto rounded-full p-4 flex-1" type="email" name="" placeholder="email@example.com">
+						<button class="w-full md:w-auto btn btn-primary">get started for free</button>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- footer -->
+		<footer class="footer bg-[#0b1523] pt-32 px-6">
+			<div class="footer__wrapper container">
+				<div class="footer__content grid grid-cols-1 md:grid-cols-3 flow-content--md">
+					<nav class="footer__contact-nav">
+						<ul class="footer__contact-list flow-content--md">
+							<li class="footer__contact-item flex items-center gap-4">
+								<img src="images/icon-phone.svg" alt="">
+								<a href="tel:+1-543-123-4567">+1-543-123-4567</a>
+							</li>
+							<li class="footer__contact-item flex items-center gap-4">
+								<img src="images/icon-email.svg" alt="">
+								<a href="mailto:example@fylo.com">example@fylo.com</a>
+							</li>
+						</ul>
+					</nav>
+					<nav class="footer__link-nav grid grid-cols-1 md:grid-cols-2 gap-8">
+						<ul class="footer__link-list md:text-center flow-content--sm">
+							<li class="link-item"><a href="">About</a></li>
+							<li class="link-item"><a href="">Jobs</a></li>
+							<li class="link-item"><a href="">Press</a></li>
+							<li class="link-item"><a href="">Blog</a></li>
+						</ul>
+						<ul class="footer__link-list flow-content--sm">
+							<li class="link-item"><a href="">Contact Us</a></li>
+							<li class="link-item"><a href="">Terms</a></li>
+							<li class="link-item"><a href="">Privacy</a></li>
+						</ul>
+					</nav>
+					<nav class="footer__social-nav justify-self-center md:justify-self-end">
+						<ul class="footer__nav-list flex gap-4">
+							<li class="footer__social-item"><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+							<li class="footer__social-item"><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+							<li class="footer__social-item"><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
