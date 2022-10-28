@@ -5,6 +5,19 @@ const moon = document.querySelector('.moon')
 const sun = document.querySelector('.sun')
 const bg = document.querySelector('.hero__header')
 
+// Implementing dark mode base on the preferred color scheme 
+if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+	body.classList.add("dark")
+	logo.src = "images/logo-dark-mode.svg"
+	moon.classList.add("hidden")
+	sun.classList.remove("hidden")
+} else {
+	body.classList.remove("dark")
+	logo.src = "images/logo-light-mode.svg"
+	moon.classList.remove("hidden")
+	sun.classList.add("hidden")
+}
+
 // dark mode configuration
 btn.addEventListener('click', () => {
 	body.classList.toggle('dark')
@@ -19,4 +32,5 @@ btn.addEventListener('click', () => {
 		sun.classList.add("hidden")
 	}
 })
+
 
