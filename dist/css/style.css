@@ -754,7 +754,13 @@ h1,h2,h3,h4 {
 .hero__header {
 	background: url('../images/bg-curvy-light-mode.svg') no-repeat center/cover;
 	width: 100%;
-	padding: 5rem;
+	padding: 2.5rem;
+}
+
+@media (min-width: 1024px)  {
+	.hero__header {
+		min-height: 450px;
+	}
 }
 
 .dark .hero__header {
