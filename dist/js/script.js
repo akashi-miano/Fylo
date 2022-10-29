@@ -5,32 +5,41 @@ const moon = document.querySelector('.moon')
 const sun = document.querySelector('.sun')
 const bg = document.querySelector('.hero__header')
 
-// Implementing dark mode base on the preferred color scheme 
-if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+function dark () {
 	body.classList.add("dark")
 	logo.src = "images/logo-dark-mode.svg"
 	moon.classList.add("hidden")
-	sun.classList.remove("hidden")
-} else {
+	sun.classList.remove("hidden") 
+}
+
+function light () {
 	body.classList.remove("dark")
 	logo.src = "images/logo-light-mode.svg"
 	moon.classList.remove("hidden")
 	sun.classList.add("hidden")
+
 }
 
-// dark mode configuration
+let currentTheme = localStorage.getItem("theme")
+
+// Setting the theme based on the local storage
+if (currentTheme === 'dark') {
+	dark()
+} else {
+	light()
+}
+
+// dark mode toggler button
 btn.addEventListener('click', () => {
 	body.classList.toggle('dark')
 
 	if (body.classList.contains("dark")) {
-		logo.src = "images/logo-dark-mode.svg"
-		moon.classList.add("hidden")
-		sun.classList.remove("hidden")
+		localStorage.setItem('theme','dark')
+		dark()
+
 	} else {
-		logo.src = "images/logo-light-mode.svg"
-		moon.classList.remove("hidden")
-		sun.classList.add("hidden")
+		localStorage.setItem('theme','light')
+		light()
 	}
 })
-
 
