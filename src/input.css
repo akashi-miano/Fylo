@@ -59,6 +59,11 @@ h1,h2,h3,h4 {
 	width: 100%;
 	padding: 2.5rem;
 }
+@media screen(lg) {
+.hero__header {
+	padding: 4rem !important;
+}
+}
 
 .dark .hero__header {
 	background: url('../images/bg-curvy-dark-mode.svg') no-repeat center/cover;
@@ -103,7 +108,7 @@ h1,h2,h3,h4 {
 }
 /* media */
 
-@media(max-width: 48em) {
+@media(max-width: 35em) {
 	html {
 		font-size: 62.5%;
 	}
